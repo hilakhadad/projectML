@@ -1,4 +1,4 @@
-# projectML
+# ProjectML
 
 All of our Running code is writtent in Jupyter notebook format, so generally self explanetory.
 The next instructions are for connecting the relevant datasets so the code could run cleanly.
