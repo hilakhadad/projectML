@@ -1,6 +1,6 @@
 # ProjectML
 
-All of our Running code is writtent in Jupyter notebook format, so generally self explanetory.
+All of our running code is writtent in Jupyter notebook format, so generally self explanetory.
 The next instructions are for connecting the relevant datasets so the code could run cleanly.
 
 In order to run the toy_problem file, delete the first cell if you are not using google-colab
@@ -11,6 +11,8 @@ Edit the DSs paths to the correct locations and run.
 
 To run the FS algorithm files (7 total) upload the clean DSs in the zipped file and correct
 The relevant paths in the run file.
+
+To run the part 4 code, upload the results tables and the clean DSs from the zipped file and correct the paths in the code.
 
 To run the Friedman and post hoc test, upload the results tables from the zipped file
 and correct the paths in the code.
