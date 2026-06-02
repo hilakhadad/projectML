@@ -1,18 +1,86 @@
-# ProjectML
+# 🔬 Feature Selection Benchmark — Machine Learning Project
 
-All of our running code is writtent in Jupyter notebook format, so generally self explanetory.
-The next instructions are for connecting the relevant datasets so the code could run cleanly.
+A comparative study of **7 feature selection algorithms** across multiple datasets, evaluating their impact on classification performance.
 
-In order to run the toy_problem file, delete the first cell if you are not using google-colab
-uplad the SPECTF.train data file and edit the path in the second cell to the correct location.
+Built with Python & Jupyter Notebooks as part of a Machine Learning course at Ben-Gurion University.
 
-To run the cleaning_process file, download all the relevant DSs that are mentioned in the report.
-Edit the DSs paths to the correct locations and run.
+---
 
-To run the FS algorithm files (7 total) upload the clean DSs in the zipped file and correct
-The relevant paths in the run file.
+## 🎯 Goal
 
-To run the part 4 code, upload the results tables and the clean DSs from the zipped file and correct the paths in the code.
+Identify which feature selection method best improves classifier accuracy across diverse datasets, using statistical tests to validate results.
 
-To run the Friedman and post hoc test, upload the results tables from the zipped file
-and correct the paths in the code.
+---
+
+## 🧪 Methods Compared
+
+| Algorithm | Type |
+|-----------|------|
+| Algo1 (custom) | Filter |
+| Algo2 / New Algo2 | Filter |
+| MRMR | Filter (Max Relevance Min Redundancy) |
+| RFE | Wrapper (Recursive Feature Elimination) |
+| ReliefF | Filter |
+| SelectFdr | Filter (False Discovery Rate) |
+
+---
+
+## 📊 Datasets
+
+- Multiple real-world datasets (medical, benchmark)
+- - Includes **SPECTF Heart** dataset as toy problem baseline
+  - - All datasets cleaned and preprocessed before feature selection
+   
+    - ---
+
+    ## 🧮 Statistical Evaluation
+
+    - **Friedman test** — non-parametric comparison across all algorithms
+    - - **Post-hoc tests** — pairwise significance analysis
+      - - Results summarized in comparison tables
+       
+        - ---
+
+        ## 🛠️ Tech Stack
+
+        | Tool | Purpose |
+        |------|---------|
+        | Python | Core language |
+        | scikit-learn | ML models & feature selection |
+        | pandas / numpy | Data processing |
+        | scipy | Statistical tests |
+        | Jupyter Notebook | Analysis & visualization |
+
+        ---
+
+        ## 📁 Files
+
+        | File | Description |
+        |------|-------------|
+        | `toy_problem.ipynb` | Baseline experiment on SPECTF dataset |
+        | `cleaningProcess.ipynb` | Data loading, cleaning & preprocessing |
+        | `run files/runAlgo*.ipynb` | Run each of the 7 feature selection algorithms |
+        | `part_4_code.ipynb` | Performance comparison across algorithms |
+        | `Friedman_and_posthoc.ipynb` | Statistical significance testing |
+
+        ---
+
+        ## 🚀 Getting Started
+
+        1. Download the datasets mentioned in the report
+        2. 2. Run `cleaningProcess.ipynb` first to prepare clean datasets
+           3. 3. Run each algorithm notebook in `run files/`
+              4. 4. Run `part_4_code.ipynb` to compare results
+                 5. 5. Run `Friedman_and_posthoc.ipynb` for statistical validation
+                   
+                    6. ```bash
+                       pip install scikit-learn pandas numpy scipy jupyter
+                       ```
+
+                       ---
+
+                       ## 📌 Key Findings
+
+                       - Feature selection significantly reduces dimensionality without sacrificing accuracy
+                       - - No single algorithm dominates across all datasets — results are dataset-dependent
+                         - - Statistical tests confirm meaningful performance differences between methods
